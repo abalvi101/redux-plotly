@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  border: 0.1rem solid #000;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.6rem;
+  margin: 0.5rem 2rem;
+}
+
+.redButton {
+  background-color: rgb(255, 121, 121);
+}
+
+.blueButton {
+  background-color: rgb(52, 123, 255);
+}
+
+.greenButton {
+  background-color: rgb(85, 204, 105);
+}
