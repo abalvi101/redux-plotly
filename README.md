@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Redux y Plotly en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto de ejemplo muy sencillo del funcionamiento de las librerías Redux y Plotly en React.js.
 
-## Available Scripts
+## Redux
 
-In the project directory, you can run:
+![Redux](https://miro.medium.com/max/700/0*R73zsxhSuasT9MKR.png)
 
-### `yarn start`
+Redux es un sistema de almacenamiento de estados, que nos permite tener un storage común a toda la aplicación para
+compartir estados entre componentes de forma muy simple.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+>[Aquí](https://es.redux.js.org/) puede saber más sobre Redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Plotly
 
-### `yarn test`
+![Plotly](https://metalblueberry.github.io/post/blog/2020-05-11_go_plotly/plotly.png#m)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Plotly es una librería disponible para varios lenguajes enfocada en la creación de gráficas de todo tipos.
+Desde los clásicos gráficos de barras o de barra, hasta mapas de calor, gráficos 3D, etc.
+Es muy potente y versátil y permite gran nivel de personalización.
 
-### `yarn build`
+>[Aquí](https://plotly.com/javascript/) puede saber más sobre Plotly
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ¿Cómo iniciar el proyecto?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Primero debes ejecutar `$yarn install` para que se instalen todas las dependencias.
+2. Luego para desplegar la aplicación bastará con `$yarn start`.
+3. Cuando hayamos terminado, con el atajo `Ctrl+C` finalizaremos el proceso.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ¿En qué consiste la aplicación?
 
-### `yarn eject`
+Como mencioné antes se trata de un ejemplo muy sencillo. Este consiste en un panel con tres colores (rojo, azul y verde), cada uno de ellos tiene un contador (inicialmente a 0) y dos botones, uno para sumar y otro para restar. Estos contadores se encuentran en la store de Redux, mediante la cuál se le proporciona a otro componente, donde se encuentra un gráfico circular en el que se van reflejando los tres colores con sus respectivas proporciones.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
