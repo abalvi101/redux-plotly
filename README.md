@@ -31,3 +31,5 @@ Es muy potente y versátil y permite gran nivel de personalización.
 
 Como mencioné antes se trata de un ejemplo muy sencillo. Este consiste en un panel con tres colores (rojo, azul y verde), cada uno de ellos tiene un contador (inicialmente a 0) y dos botones, uno para sumar y otro para restar. Estos contadores se encuentran en la store de Redux, mediante la cuál se le proporciona a otro componente, donde se encuentra un gráfico circular en el que se van reflejando los tres colores con sus respectivas proporciones.
 
+
+![App](/public/app.png)
